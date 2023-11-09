@@ -1,5 +1,4 @@
 '''
-Diego Silva Cavalcanti - RM 553351
 Crie um menu com as 4 operações matemáticas (soma, subtração, multiplicação e divisão) que devem ser executadas com 2 números reais (float) de acordo com a escolha (opção) do usuário:
 '''
 
@@ -18,15 +17,15 @@ opcao = int(input("Digite a opção desejada (1 a 4) : "))
 match opcao:
     case 1:
         soma = n1 + n2
-        print(f"A soma dos 2 números é {soma}")
+        print(f"{n1} + {n2} = {soma}")
     case 2:
         sub = n1 - n2
-        print(f"A subtração dos 2 números é {sub}")
+        print(f"{n1} - {n2} = {sub}")
     case 3:
         mult = n1 * n2
-        print(f"A multiplicação dos 2 números é {mult}")
+        print(f"{n1} * {n2} = {mult}")
     case 4:
         div = n1 / n2
-        print(f"A divisão dos 2 números é {div:.2f}")
+        print(f"{n1} / {n2} = {div:.2f}")
     case _:
         print("Opção inválida")
